@@ -1,0 +1,22 @@
+
+html{
+
+    background: url('../images/smacp.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body{
+    background-color: inherit;
+}
+
+form{
+
+    background-color: white;
+    box-shadow: 5px 5px 5px rgb(113,113,190);
+
+}
+
+.full-width{
+    min-height: 100vh;
+}
+
