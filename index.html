@@ -1,23 +1,22 @@
-
-
 <?php
-    require_once '../includes/header.php';
-    session_start();
+session_start();
+require_once 'includes/header.php';
 ?>
 
-	<div class="container">
+<div class="full-width d-flex justify-content-center align-items-center">
 
-		<?php require_once '../includes/adminnav.php'; ?>
-		
-		<section> 
-			<p class="display-6">Home Page</p>
-			
-		</section>
-		<p>Welcome, <?php echo $_SESSION['fname']  ?>! Please use the navigation bar above to manage users, categories, books, courses, students, and positions.</p>
-	</div>
+    <form action="" method="post" class="rounded p-4 p-sm-3">
+        <div class="mb-3">
+            <p class="text-center text-primary">Select Login Type</p>
+        </div>
 
+        <a href="librarianlogin.php" class="btn btn-primary">Librarian</a>
+        <a href="studentlogin.php" class="btn btn-primary">Student</a>
 
+    </form>
+
+</div>
 
 <?php
-    require_once '../includes/footer.php';
+require_once 'includes/footer.php';
 ?>
