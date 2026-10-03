@@ -1,0 +1,23 @@
+
+
+<?php
+    require_once '../includes/header.php';
+    session_start();
+?>
+
+	<div class="container">
+
+		<?php require_once '../includes/adminnav.php'; ?>
+		
+		<section> 
+			<p class="display-6">Home Page</p>
+			
+		</section>
+		<p>Welcome, <?php echo $_SESSION['fname']  ?>! Please use the navigation bar above to manage users, categories, books, courses, students, and positions.</p>
+	</div>
+
+
+
+<?php
+    require_once '../includes/footer.php';
+?>
